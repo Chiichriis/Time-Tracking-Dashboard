@@ -1,0 +1,135 @@
+@font-face {
+  font-family: Rubik;
+  src: url(../font/Rubik-VariableFont_wght.ttf);
+}
+
+.task-card {
+  background-repeat: no-repeat;
+  background-position: top right;
+  margin: 0 0 2rem;
+}
+
+.task-card .card-content {
+  border-radius: 1rem;
+  padding: 1rem;
+  font-family: Rubik;
+  color: #bdc1ff;
+  background-color: #1c1f4a;
+  position: relative;
+  bottom: -1rem;
+}
+
+.task-card .card-content .card-title, .task-card .card-content .card-timeframe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-card .card-content .card-title .task-name, .task-card .card-content .card-timeframe .task-name {
+  color: #bdc1ff;
+  font-size: 18px;
+}
+
+.task-card .card-content .card-timeframe {
+  margin: 1rem 0 0;
+}
+
+.task-card .card-content .card-timeframe .hour {
+  font-size: 1.7rem;
+  color: #bdc1ff;
+  font-weight: 400;
+}
+
+.task-card .card-content .card-timeframe .period {
+  color: #6f76c8;
+  font-size: .8rem;
+}
+
+.work {
+  border-radius: 1rem;
+  padding: 1rem;
+  font-family: Rubik;
+  color: #bdc1ff;
+  background-color: #ff8c66;
+  background-image: url(../images/icon-work.svg);
+  padding: 2rem 0 0;
+}
+
+.play {
+  border-radius: 1rem;
+  padding: 1rem;
+  font-family: Rubik;
+  color: #bdc1ff;
+  background-color: #56c2e6;
+  background-image: url(../images/icon-play.svg);
+  padding: 2rem 0 0;
+}
+
+.study {
+  border-radius: 1rem;
+  padding: 1rem;
+  font-family: Rubik;
+  color: #bdc1ff;
+  background-color: #ff5c7c;
+  background-image: url(../images/icon-study.svg);
+  padding: 2rem 0 0;
+}
+
+.excercise {
+  border-radius: 1rem;
+  padding: 1rem;
+  font-family: Rubik;
+  color: #bdc1ff;
+  background-color: #4acf81;
+  background-image: url(../images/icon-exercise.svg);
+  padding: 2rem 0 0;
+}
+
+.social {
+  border-radius: 1rem;
+  padding: 1rem;
+  font-family: Rubik;
+  color: #bdc1ff;
+  background-color: #7536d3;
+  background-image: url(../images/icon-social.svg);
+  padding: 2rem 0 0;
+}
+
+.selfCare {
+  border-radius: 1rem;
+  padding: 1rem;
+  font-family: Rubik;
+  color: #bdc1ff;
+  background-color: #f1c65b;
+  background-image: url(../images/icon-self-care.svg);
+  padding: 2rem 0 0;
+}
+
+@media (min-width: 800px) {
+  .task-card .card-content .card-title, .task-card .card-content .card-timeframe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .task-card .card-content .card-title .task-name, .task-card .card-content .card-timeframe .task-name {
+    color: #bdc1ff;
+    font-size: 12px;
+  }
+  .task-card .card-content .card-title img, .task-card .card-content .card-timeframe img {
+    height: .3rem;
+    width: auto;
+  }
+  .task-card .card-content .card-timeframe {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .task-card .card-content .card-timeframe .hour {
+    font-size: 1.7rem;
+    color: #bdc1ff;
+    font-weight: 400;
+  }
+  .task-card .card-content .card-timeframe .period {
+    color: #6f76c8;
+    font-size: .5rem;
+  }
+}

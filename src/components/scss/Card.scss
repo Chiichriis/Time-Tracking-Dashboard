@@ -1,0 +1,110 @@
+@import 'config';
+
+.task-card{
+    background-repeat: no-repeat;
+    background-position: top right;
+    margin: 0 0 2rem;
+    
+
+    .card-content{
+        @include card($Dark-blue);
+        position: relative;
+        bottom: -1rem;
+
+        .card-title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .task-name{
+                color: $Pale-Blue;
+                font-size: 18px;
+            }
+            
+        }
+        .card-timeframe{
+            @extend .card-title;
+            margin: 1rem 0 0;
+
+            .hour{
+                font-size: 1.7rem;
+                color: $Pale-Blue;
+                font-weight: 400;
+            }
+            .period{
+                color: $Desaturated-blue;
+                font-size: .8rem;
+            }
+        }
+    }
+}
+
+.work{
+    @include card($Light-red-work);
+    background-image: url(../images/icon-work.svg);
+    padding: 2rem 0 0;
+}
+.play{
+    @include card($Soft-blue-play);
+    background-image: url(../images/icon-play.svg);
+    padding: 2rem 0 0;
+}
+.study{
+    @include card($Light-red-study);
+    background-image: url(../images/icon-study.svg);
+    padding: 2rem 0 0; 
+}
+.excercise{
+    @include card($Lime-green-exercise);
+    background-image: url(../images/icon-exercise.svg);
+    padding: 2rem 0 0;
+}
+.social{
+    @include card($Violet-Social);
+    background-image: url(../images/icon-social.svg);
+    padding: 2rem 0 0;
+}
+.selfCare{
+    @include card($Soft-orange-selfCare);
+    background-image: url(../images/icon-self-care.svg);
+    padding: 2rem 0 0;
+}
+
+@media (min-width: 800px) {
+    .task-card{
+
+        .card-content{
+
+            .card-title{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+    
+                .task-name{
+                    color: $Pale-Blue;
+                    font-size: 12px;
+                }
+                img{
+                    height: .3rem;
+                    width: auto;
+                }
+                
+            }
+    
+            .card-timeframe{
+                flex-direction: column;
+                align-items: flex-start;
+    
+                .hour{
+                    font-size: 1.7rem;
+                    color: $Pale-Blue;
+                    font-weight: 400;
+                }
+                .period{
+                    color: $Desaturated-blue;
+                    font-size: .5rem;
+                }
+            }
+        }  
+    }
+}
